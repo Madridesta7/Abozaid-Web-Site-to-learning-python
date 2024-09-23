@@ -1,0 +1,314 @@
+/* Universal Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Fonts */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #f9f9f9, #e0eafc);
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header .highlight {
+    color: #FFD700;
+}
+
+header p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #FFD700;
+}
+
+.intro {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #fff;
+    color: #333;
+}
+
+.intro h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    font-size: 1.3rem;
+    color: #555;
+}
+
+#lessons {
+    padding: 50px 20px;
+    background-color: #f0f0f0;
+}
+
+#lessons h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0072ff;
+}
+
+/* Lesson Cards */
+.lesson-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.lesson-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-card h3 {
+    color: #00c6ff;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.lesson-card p {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.lesson-card ul {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.start-btn {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.start-btn:hover {
+    background: linear-gradient(to right, #0072ff, #00c6ff);
+}
+
+/* Animation Section */
+#animation-area {
+    height: 400px;
+    margin: 50px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #0072ff;
+    color: white;
+    margin-top: 30px;
+}
+.explanation, .output {
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.explanation {
+    background-color: #e8f7ff; /* Light blue for explanation */
+    font-size: 1.1rem;
+    color: #0072ff;
+}
+
+.output {
+    background-color: #e0ffe0; /* Light green for output */
+    font-size: 1.1rem;
+    color: #4CAF50;
+}
+
+.lesson-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lesson-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* Exercise Styles */
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #333;
+}
+
+.check-btn {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.check-btn:hover {
+    background-color: #005bb5;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.feedback.correct {
+    color: #4CAF50; /* Green for correct */
+}
+
+.feedback.incorrect {
+    color: #FF6347; /* Red for incorrect */
+}
+/* Styling for Lesson Cards */
+.lesson-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.lesson-card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.explanation {
+    background-color: #eef;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Styling for Exercise Cards */
+.exercise-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.exercise-card {
+    background-color: #fff8e1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-family: monospace;
+    font-size: 1rem;
+    color: #333;
+}
+
+.check-btn {
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.check-btn:hover {
+    background-color: #005bb5;
+}
+
+.feedback {
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+.feedback.correct {
+    color: #4CAF50;
+}
+
+.feedback.incorrect {
+    color: #FF6347;
+}

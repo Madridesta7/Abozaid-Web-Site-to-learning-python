@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Python with Interactive Explanations and Exercises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Learn <span class="highlight">Python Programming</span></h1>
+        <p>Interactive lessons with detailed explanations and exercises.</p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#lessons">Lessons</a>
+            <a href="#exercises">Exercises</a>
+        </nav>
+    </header>
+
+    <section class="intro">
+        <h2>Welcome to Your Python Journey!</h2>
+        <p>Learn Python programming step-by-step and test your skills with exercises.</p>
+    </section>
+
+    <!-- Lessons Section -->
+    <section id="lessons">
+        <h2>Python Lessons</h2>
+        <div class="lesson-grid">
+            <!-- Lesson 1: Hello World -->
+            <div class="lesson-card" id="lesson1">
+                <h3>Lesson 1: Hello World</h3>
+                <p>Start by learning how to print "Hello, World!" in Python.</p>
+                <button class="start-btn" onclick="startHelloWorldLesson()">Start Lesson</button>
+
+                <!-- Explanation Section -->
+                <div class="explanation" id="helloWorldExplanation"></div>
+            </div>
+
+            <!-- Lesson 2: Variables -->
+            <div class="lesson-card" id="lesson2">
+                <h3>Lesson 2: Variables and Data Types</h3>
+                <p>Learn how to store data using variables in Python.</p>
+                <button class="start-btn" onclick="startVariablesLesson()">Start Lesson</button>
+
+                <!-- Explanation Section -->
+                <div class="explanation" id="variablesExplanation"></div>
+            </div>
+
+            <!-- Lesson 3: Loops -->
+            <div class="lesson-card" id="lesson3">
+                <h3>Lesson 3: Loops</h3>
+                <p>Learn how to use loops to repeat tasks in Python.</p>
+                <button class="start-btn" onclick="startLoopLesson()">Start Lesson</button>
+
+                <!-- Explanation Section -->
+                <div class="explanation" id="loopExplanation"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercises Section -->
+    <section id="exercises">
+        <h2>Python Exercises</h2>
+        <div class="exercise-grid">
+            <!-- Exercise 1 -->
+            <div class="exercise-card" id="exercise1">
+                <h4>Exercise 1: Print Your Name</h4>
+                <p>Write a Python program to print your name using <code>print()</code>.</p>
+                <textarea id="exercise1Input" placeholder="Write your code here..."></textarea>
+                <button class="check-btn" onclick="checkExercise1()">Check Answer</button>
+                <div class="feedback" id="exercise1Feedback"></div>
+            </div>
+
+            <!-- Exercise 2 -->
+            <div class="exercise-card" id="exercise2">
+                <h4>Exercise 2: Simple Math</h4>
+                <p>Create two variables <code>x</code> and <code>y</code>. Print the sum of <code>x + y</code>.</p>
+                <textarea id="exercise2Input" placeholder="Write your code here..."></textarea>
+                <button class="check-btn" onclick="checkExercise2()">Check Answer</button>
+                <div class="feedback" id="exercise2Feedback"></div>
+            </div>
+
+            <!-- Exercise 3 -->
+            <div class="exercise-card" id="exercise3">
+                <h4>Exercise 3: Loop through Numbers</h4>
+                <p>Write a <code>for</code> loop that prints the numbers from 1 to 5.</p>
+                <textarea id="exercise3Input" placeholder="Write your code here..."></textarea>
+                <button class="check-btn" onclick="checkExercise3()">Check Answer</button>
+                <div class="feedback" id="exercise3Feedback"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2024 Python Learning.Saif Abozaid All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
